@@ -24,8 +24,6 @@ body {
    
 }
 /* Utility */
-
-/* Utility classes are set to avoid code duplication when expanding the website */
 .no-margin {
     margin: 0;
 }
@@ -34,4 +32,27 @@ body {
 }
 .center-content {
     text-align: center;
+}
+
+/* Main Content */
+.container {
+    display: flex;
+    flex-direction: row; 
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    width: min(90%, 47rem);
+    margin: 0 auto;
+    height: 100vh; /* Set the height to 100% of the viewport */
+}
+/* Card */
+.card__image {
+    flex: 0 0 calc(50% - 1rem);
+}
+.image-product{
+    height: 43.5rem;
+}
+.card__info {
+    height: 43.5rem;
+    flex: 0 0 calc(50% - 1rem);
+    background-color: aliceblue;
 }
