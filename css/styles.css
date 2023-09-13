@@ -1,0 +1,37 @@
+:root {
+    --font-fraunces-bold: font-family: 'Fraunces', serif;
+    --font-monserrat-normal: font-family: 'Montserrat', sans-serif;
+    --dark-cyan-rgb: rgb(15, 111, 104);
+    --cream-rgb: rgb(241, 216, 184);
+    --very-dark-blue-rgb: rgb(16, 19, 39);
+    --dark-grayish-blue-rgb: rgb(84, 94, 114);
+    --white-rgb: rgb(255, 255, 255);
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /* 1 rem = 10px */
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body { 
+    background-color: var(--cream-rgb);
+    font-size: var(--);
+    font-size: 1.4rem;
+}
+body {
+   
+}
+/* Utility */
+
+/* Utility classes are set to avoid code duplication when expanding the website */
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.center-content {
+    text-align: center;
+}
