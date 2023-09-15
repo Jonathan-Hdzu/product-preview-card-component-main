@@ -35,24 +35,28 @@ body {
 }
 
 /* Main Content */
-.container {
-    display: flex;
-    flex-direction: row; 
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    width: min(90%, 47rem);
+.container {   
+    width: min(90%, 120rem);
     margin: 0 auto;
-    height: 100vh; /* Set the height to 100% of the viewport */
 }
+
 /* Card */
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 55em; 
+}
 .card__image {
     flex: 0 0 calc(50% - 1rem);
+    height: 43rem;
 }
 .image-product{
-    height: 43.5rem;
+    height: 43rem;
 }
 .card__info {
-    height: 43.5rem;
-    flex: 0 0 calc(50% - 1rem);
+    flex: 0 0 calc(40% - 1rem);
+    height: 43rem;
     background-color: aliceblue;
 }
