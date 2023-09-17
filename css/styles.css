@@ -57,29 +57,29 @@ body {
 }
 .image-product{
     height: 43rem;
-    border-radius: 19px;
     border-radius: 19px 0 0 19px;
 }
 .card__info {
-    padding: 1rem 4rem;
-    flex: 0 0 calc(25% - 1rem);
-    height: 43rem;
+    padding: 1rem 3rem;
+    flex: 0 0 calc(30% - 1rem);
+    min-height: 43rem;
+    height: auto;
     background-color: var(--white-rgb);
     border-radius: 0 19px 19px 0;
-    
 }
 .card__info--header{
     font-family: var(--font-monserrat-normal);
     text-transform: uppercase;
-    font-weight: 100;
+    /* font-weight: 100; */
     color: var(--dark-grayish-blue-rgb);
+    
 }
 .card__info--description{
     color: var(--dark-grayish-blue-rgb);
 }
 .card__info--title {
     font-family: var(--font-fraunces-bold);
-    font-size: 20px;
+    font-size: 32px;
 }
 .card__info--description{
     font-family: var(--font-monserrat-normal);
@@ -87,15 +87,15 @@ body {
 .card__info--price{
     font-family: var(--font-fraunces-bold);
     color: var(--dark-cyan-rgb);
-    font-size: 22px;
+    font-size: 26px;
    
 }
 .card__info--button {
     background-color: var(--dark-cyan-rgb);
     border: none;
     border-radius: 5px;
-    height: 3.5rem;
-    width: 17rem;
+    height: 4rem;
+    width: 23rem;
     font-family: var(--font-monserrat-normal);
     font-size: 700;
     color: var(--white-rgb);
