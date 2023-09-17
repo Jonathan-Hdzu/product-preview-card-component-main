@@ -46,12 +46,8 @@ body {
     margin: 0 auto;
     max-width: 55em; 
     height: 100vh;
-    
-    
-    
 }
 .card__image {
-    /* flex: 0 0 calc(50% - 1rem); */
     height: 43rem;
     
 }
@@ -70,25 +66,32 @@ body {
 .card__info--header{
     font-family: var(--font-monserrat-normal);
     text-transform: uppercase;
-    /* font-weight: 100; */
     color: var(--dark-grayish-blue-rgb);
     
 }
 .card__info--description{
     color: var(--dark-grayish-blue-rgb);
+    font-family: var(--font-monserrat-normal);
 }
 .card__info--title {
     font-family: var(--font-fraunces-bold);
     font-size: 32px;
 }
-.card__info--description{
-    font-family: var(--font-monserrat-normal);
-}
 .card__info--price{
     font-family: var(--font-fraunces-bold);
     color: var(--dark-cyan-rgb);
     font-size: 26px;
-   
+}
+.card__info--previousprice {
+    display: inline-block;
+    color: var(--dark-grayish-blue-rgb);
+    font-family: var(--font-monserrat-normal);
+    text-decoration: line-through;
+    font-size: 1.3rem;
+    padding-left: 3rem;
+    padding-top: -10rem;
+    
+    
 }
 .card__info--button {
     background-color: var(--dark-cyan-rgb);
@@ -100,3 +103,7 @@ body {
     font-size: 700;
     color: var(--white-rgb);
 } 
+.card__info--button:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+}
