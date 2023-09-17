@@ -37,8 +37,6 @@ body {
     margin: 0 auto;
     
 }
-
-/* Card */
 .card {
     display: flex;
     justify-content: center;
@@ -47,6 +45,20 @@ body {
     max-width: 55em; 
     height: 100vh;
 }
+
+/* Card */
+@media (max-width: 480px) {
+    .card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; 
+        margin: 0 auto;
+        max-width: 55em; 
+        height: 100vh;
+    }
+}
+
 .card__image {
     height: 43rem;
     
@@ -64,6 +76,7 @@ body {
     border-radius: 0 19px 19px 0;
 }
 .card__info--header{
+    letter-spacing: 4px;
     font-family: var(--font-monserrat-normal);
     text-transform: uppercase;
     color: var(--dark-grayish-blue-rgb);
@@ -106,4 +119,65 @@ body {
 .card__info--button:hover {
     cursor: pointer;
     box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+}
+@media (max-width: 468px) {
+    .card__image {
+        height: 35rem;
+    }
+    .image-product{
+        border-radius: 19px 19px 0 0;
+        width: 37rem;
+    }
+    .card__info {
+        padding: 1rem 4rem;
+        flex: 0 0 calc(30% - 1rem);
+        min-height: 43rem;
+        height: auto;
+        background-color: var(--white-rgb);
+        border-radius: 0 0 19px 19px;
+    }
+    .card__info--header{
+        font-family: var(--font-monserrat-normal);
+        text-transform: uppercase;
+        color: var(--dark-grayish-blue-rgb);
+        
+    }
+    .card__info--description{
+        color: var(--dark-grayish-blue-rgb);
+        font-family: var(--font-monserrat-normal);
+    }
+    .card__info--title {
+        font-family: var(--font-fraunces-bold);
+        font-size: 32px;
+    }
+    .card__info--price{
+        font-family: var(--font-fraunces-bold);
+        color: var(--dark-cyan-rgb);
+        font-size: 26px;
+    }
+    .card__info--previousprice {
+        display: inline-block;
+        color: var(--dark-grayish-blue-rgb);
+        font-family: var(--font-monserrat-normal);
+        text-decoration: line-through;
+        font-size: 1.3rem;
+        padding-left: 3rem;
+        padding-top: -10rem;
+        
+        
+    }
+    .card__info--button {
+        background-color: var(--dark-cyan-rgb);
+        border: none;
+        border-radius: 5px;
+        height: 5rem;
+        width: 29rem;
+        font-family: var(--font-monserrat-normal);
+        font-size: 700;
+        color: var(--white-rgb);
+    } 
+    .card__info--button:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 12px -2px rgba(0,0,0,0.5);
+    }
 }
